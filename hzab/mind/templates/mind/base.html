@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hadiya zone agriculture</title>
+    {% load static %}
+        <script defer src="{% static 'mind/js/nav.js' %}"></script>
+        <script defer src="{% static 'mind/js/intersection.js' %}"></script>
+  
+    <link rel="stylesheet" href="{% static 'mind/css/bundle.css' %}">
+    <link href="https://api.fontshare.com/v2/css?f[]=supreme@300,400,500,700,800&display=swap" rel="stylesheet">
+
+    
+  </head>
+  <body>
+
+    <section id="header" class=" ">
+
+      <div class="all__header">
+        <div class="header__logo">
+          <img class="header__logo_image jumpy"  width="64px" hieght="64px" src="{% static 'mind/img/logo.png' %}">
+          <p class="header__logo_desc" >Hadiya Zone<br>Departement of<br>Agriculture</p>
+        </div>
+          <svg class= "jumpy"   height="2rem"    width="2rem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+          </svg>
+        <ul class="header_ul hidden">
+          <li><a class="header__anchor" href="{% url 'mind:index' %}#home">home</a></li>
+          <li>
+            <button class="header__anchor aboutus__anchor dropbtn" >about us ▼</button>
+            <div class="about__us_list sub__list">
+              <ul>
+                <li><a href="{% url 'mind:officials' %}">our officials</a></li>
+                <li><a href="{% url 'mind:region' %}">The region</a></li>
+                <li><a href="{% url 'mind:organization' %}">Organizational Structure</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="header__anchor" href="{% url 'mind:index' %}#services">Services</a></li>
+          <li><a class="header__anchor" href="{% url 'mind:index' %}#programs">Programs</a></li>
+          <li>
+          <button class="header__anchor resources__anchor dropbtn">resources ▼</button>
+          <div class="resources__list sub__list">
+            <ul>
+              <li><a href="{% url 'mind:resources' %}#img">images</a></li>
+              <li><a href="{% url 'mind:resources' %}#doc">Documents</a></li>
+            </ul>
+          </div>
+          </li>
+          <li><a class="header__anchor" href="{% url 'mind:news' %}" >news</a></li>
+          <li><a class="header__anchor" href="{% url 'mind:contact' %}">Contact</a></li>
+          <li>
+            <button class="header__anchor announcement__anchor dropbtn" >announcements ▼</button>
+            <div class="announcement__list  sub__list">
+              
+              <ul>
+                <li><a href="{% url 'mind:vacancy'%}">vacancy</a></li>
+                <li><a></a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+{% block body %}
+    
+    {% endblock body%}
+
+    <section id="contact" class=" ">
+          <div class="quick__links">
+      <P class="ttl ">Quick Links</P>
+      <ul>
+        <li><a href="{% url 'mind:index' %}#services">Services</a></li>
+        <li><a href="{% url 'mind:index' %}#home">Home</a></li>
+       <li> <a href="{% url 'mind:index' %}#programs">programs</a></li>
+        <li><a href="{% url 'mind:contact' %}">contact</a></li>
+        <li><a href="{% url 'mind:vacancy'%}">vacancy</a></li>
+        <li><a href="{% url 'mind:resources' %}#img">images</a></li>
+      </ul>
+    </div>
+    <div class="other__qiuck">
+
+        <div class="hrs__element">
+            <div class="hrs__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+            </div>
+            <div class="hrs_desc">
+              <p><span class="ttl ">Phone</span><br>0954342212</p>
+            </div>
+        </div>
+        <div class="hrs__element">
+          <div class="hrs__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          </div>
+          <div class="hrs_desc">
+            <p><span class="ttl ">Email</span><br>hossana@gmail.com</p>
+          </div>
+          
+        </div>
+        <div class="hrs__element">
+          <div class="hrs__icon clock">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock2-icon lucide-clock-2"><path d="M12 6v6l4-2"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <div class="hrs_desc">
+            <p><span class="ttl ">Office Hours</span><br>Mon - Fri: 8:00 AM - 5:00 PM<br>
+                Sat: 9:00 AM - 1:00 PM<br>
+                Sun: Closed
+              </p>
+        </div>
+      </div>
+      <div class="social__container">
+        <p class="ttl ">Follow us</p>
+        <div class="social__icons">
+          <div class="youtube social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube-icon lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></div>
+          <div class=" twitter social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></div>
+          <div class="facebook social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+
+        </div>
+      </div>
+    </div>
+
+    </section>
+
+
+
+
+  </body>
+</html>

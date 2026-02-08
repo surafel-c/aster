@@ -1,0 +1,122 @@
+
+{% extends "mind/base.html"%}
+{% block body %}
+{% load static %}
+    </section>
+    <section id="home"     class="container">
+      <div class="home__slide_show fill">
+      </div>
+      <div class="btns_3p__container">
+        <img class=" leader__image" width="20rem" src=" {% static 'mind/img/main__leader.jpg' %}" alt="leader">
+
+        <div class="wt__img">
+          <div class="p_cont">
+              <!-- <div class="timing">
+                <p><br>since 1992</p>
+              </div> -->
+              <p class="message">Message from our leader</p>
+              <p class="message__desc">The Hadiya Zone Department of Agriculture modernizes regional farming by distributing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto eveniet officiis magnam tenetur fugiat nam esse placeat, perferendis nesciunt error, accusamus fugit corrupti incidunt facere voluptatem consequatur illum, lorem300 porro quae! seeds and fertilizers, providing technical extension services, lorem60
+                managing natural resources, and enhancing livestock productivity to ensure community food security.</p>
+          </div>
+          <div class="btns__container">
+            <button class="exp__services btn"><a href="{% url 'mind:index' %}#services">Explore Services</a></button>
+            <button class="contact__us btn"><a href="{% url 'mind:contact' %}">Contact Us</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="icon__display"> 
+        <div>
+            <p>350,000+<br><span>Farmers</span></p>
+          </div>
+        <div> 
+          <p>310+<br><span>Kebele</span></p>
+        </div>
+        <div> 
+          <p>30+ <br> <span>Years</span></p>
+        </div>
+        <div>
+          <p><br>47% <br><span>Crop Yield improvement</span></p>
+          </div>
+
+      </div>
+    
+    </section>
+    <section id="services"  class="container ">
+      <div>
+        <p class="section__title">Our Services</p>
+        <p>The department supports these thousands of households through a network of Development Agents (DAs) 
+          stationed at the kebele (village) level to provide direct training and resources.</p>
+      </div>
+      <div class="service__card__container">
+        <div class="service__card crop__advisory">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sprout-icon lucide-sprout"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3"/><path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4"/><path d="M5 21h14"/></svg>
+          <P class="service__title">Crop Advisory</P>
+          <p>Expert guidance on crop selection, planting schedules, and best practices for optimal yields.<br></p>
+        </div>
+        <div class="service__card ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+          <P class="service__title">Training & Education</P>
+          <p>Workshops, seminars, and courses to enhance farming skills and knowledge of modern techniques.</p>
+        </div>
+        <div class="service__card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round-icon lucide-users-round"><path d="M18 21a8 8 0 0 0-16 0"/><circle cx="10" cy="8" r="5"/><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"/></svg>
+          <P class="service__title">Farmer Cooperatives</P>
+          <p>Support for forming and managing cooperative groups to improve market access and bargaining power.</p>
+        </div>
+        <div class="service__card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-dollar-sign-icon lucide-circle-dollar-sign"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+          <P class="service__title">Market Information</P>
+          <p>Real-time market prices, demand forecasts, and buyer connections for better sales opportunities.</p>
+        </div>
+        <div class="service__card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copyright-icon lucide-copyright"><circle cx="12" cy="12" r="10"/><path d="M14.83 14.83a4 4 0 1 1 0-5.66"/></svg>
+          <P class="service__title">Permit & Licensing</P>
+          <p>Assistance with agricultural permits, certifications, and regulatory compliance.</p>
+        </div>
+        <div class="service__card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-blocks-icon lucide-blocks"><path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"/><rect x="14" y="2" width="8" height="8" rx="1"/></svg>
+          <P class="service__title">Extension Services</P>
+          <p>On-site support from agricultural extension officers for personalized farm management.</p>
+        </div>
+        
+
+      </div>
+    </section>
+    <section id="programs"  class="container ">
+
+      <p class="section__title">Featured Programs</p>
+      <p>Specialized programs designed to address specific needs and opportunities in modern agriculture</p>
+
+      <div class="programs__card__container">
+        <div class="programs__card">
+          <img src="landmanagment.jpg">
+          <div>
+            <p class="program__title">Sustainable Land Management Program (SLMP)</p>
+            <p>Teams build terraces and plant conservation grasses to prevent soil erosion and restore degraded highland environments.</p>
+            <a>Learn more</a>
+          </div>
+        </div>
+        <div class="programs__card">
+          <img src="safetynet.jpg">
+          <div>
+            <p class="program__title">Productive Safety Net Program</p>
+            <p>Vulnerable households receive food or cash in exchange for labor on vital community infrastructure projects.</p>
+            <a>Learn more</a>
+          </div> 
+        </div>
+        <div class="programs__card">
+          <img src="livestock.jpg">
+          <div>
+            <p class="program__title">Livestock and Forage Development</p>
+            <p>The bureau introduces improved animal feed and veterinary services to boost milk and meat production.</p>
+            <a>Learn more</a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+
+{%endblock body%}

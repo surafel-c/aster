@@ -1,0 +1,15 @@
+{% extends "mind/base.html"%}
+
+{% block body%}
+<div class="container full__news_container">
+    <h1 class="full__news_title">{{my_news.title}}</h1>
+    <div class="full__news_img">{{my_news.newsImage}}</div>
+    <p class="full__news_body">{{my_news.body}}</p>
+    <P class="full__news_ref"><section style="font-weight:italic;">@sources</section>{{my_news.sources}}</P>
+
+
+
+    
+</div>
+
+{% endblock body%}
