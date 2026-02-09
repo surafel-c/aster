@@ -22,17 +22,12 @@
                     <a>Learn more</a>
                 </div>
             </div>
-            <div>
+            <div >
             {% for news in all_news %}
-                <div class="vacancy__card">
-                <p class="Vacany__card_position">News: <span>{{news.title }}</span></p>
-                <div class="vacancy__card_req">
-                    <a href="{% url 'mind:news' news.id %}"></a>
-                </div>
-                </div>
+
+            <a style="color:black; display:block;" href="{% url 'mind:full_news' news.news_id %}">{{news.title}}</a>
             {% endfor %}
-            </div>
-            
+          </div>
 
             </section>
 
