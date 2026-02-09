@@ -15,6 +15,9 @@
               {% endfor %}
           </ul>
           {% endif %}
+          {%if success %}
+          <P>{{success}}</P>
+          {% endif %}
           <p class="cont__title">Leave us a message</p>
         <form action="{% url 'mind:contact' %}" method="POST">
            {% csrf_token %}

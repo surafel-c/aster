@@ -22,7 +22,9 @@ def officials(request):
     return render(request,"mind/officials.html")
 
 def news(request):
-    return render(request, 'mind/news.html')
+    all_news = News.objects.all()
+    return render(request,"mind/news.html",{"all_news":all_news})
+
 
 def organization(request):
     return render(request,"mind/organizational.html")
@@ -42,13 +44,12 @@ from django.http import HttpResponse
 def contact(request):
     if request.method == "POST":
         # Access form fields
-        name = request.POST.get("name", "").strip()      # empty string fallback
+        name = request.POST.get("name", "").strip()      
         email = request.POST.get("email", "").strip()
         message = request.POST.get("message", "").strip()
         phone = request.POST.get("phone", "").strip()
         
 
-        # Simple validation
         errors = []
         if not name:
             errors.append("Name is required.")
@@ -60,13 +61,12 @@ def contact(request):
             errors.append("add phone number.")
 
         if errors:
-            # Re-render form with errors
+
             return render(request, "mind/contact.html", {"errors": errors,
                                                     "name": name,
                                                     "email": email,
                                                     "message": message})
 
-        # Handle the data (e.g., save to DB or send email)
         ContactMessage.objects.create(
             name=name,
             email=email,
