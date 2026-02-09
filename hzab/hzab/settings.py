@@ -37,7 +37,8 @@ else:
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["https://aster-0n1w.onrender.com",'aster-0n1w.onrender.com']
+
 
 
 # Application definition
